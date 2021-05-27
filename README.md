@@ -1,2 +1,2 @@
 # jericoamanzo.github.io
-Pagina Web
+Proyecto Web

@@ -13,7 +13,7 @@
   /* -------------------------------------Cabecera--------------------------------- */
   /* Aplicamos estilos al contendor */
   .contenedor {
-    color: black;
+    color:white;
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -61,7 +61,7 @@
   
   header .contenedortexto .texto h1,
   header .contenedortexto .texto h2 {
-    color: black;
+    color: white;
     font-weight: bolder;
     margin: 0;
   }

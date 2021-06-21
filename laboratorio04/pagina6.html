@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    // Ejemplo 1
+    // Desarrollar una aplicacion que permite ingresar 3 notas y luego calcular el promedio
+    // si el promedio es mayor o igual a 13 se debe mostrar un mensaje indicando "Aprobado"
+    // ¿Que variable necesito?
+    // 5
+    // ¿Que tipo de datos necesito?
+    // Real y Texto
+    // ¿cuales son las variables que necesito?
+    // n1,n2,n3, prom, men 
+    // ¿Que varibles voy a leer?
+    // n1,n2,n3
+    // definiendo e Inicializando variables
+    var n1=0, n2=0; n3=0,prom=0,men="";
+    // capturando valores
+    n1=parseFloat(prompt("Ingresar la nota 1"));
+    n2=parseFloat(prompt("Ingresar la nota 2"));
+    n3=parseFloat(prompt("Ingresar la nota 3"));
+    // realizando operaciones
+    prom=(n1+n2+n3)/3;
+    // condicion
+    if(prom>=13){
+        men="Aprobado";
+    }
+    // mostrando resultado
+    aletr("El promedio es: "+prom);
+    alert(men);
+
+    // Ejemplo 2
+    // Desarrollar una aplicacion en que permita calcular el sueldo final de un trabajador si 
+    // se sabe que el sueldo basico se ingresa, ademas si el trabajador pertenece a la categoria
+    // 3 se le calculara una bonificacion 7% y un descuento del 5% en base el sueldo basico
+    // Mostrar todos los resultados
+    // ¿Cuantas Variables necesito?
+    // 5
+    // ¿Que tipo de datos necesito?
+    // real, entero
+    // ¿Cuales son las variables que necesito?
+    // sb,bon, des,sf,cat 
+    // ¿Que variables voy a leer?
+    // sb,cat 
+    // definiendo e inicializando variables
+    var sb=0, bon=0, des=0, sf=0, cat=0;
+    // capturando valores
+    sb=parseFloat(prompt("Ingrese el Sueldo basico"));
+    cat=parseFloat(prompt("Ingrese la Categoria:"));
+    // condicion
+    if(cat==3){
+        bon=sb*0.07;
+        des=sb*0.05;
+    }
+    // Realizando operaciones
+    sf=sb+bon-des;
+    // mostrando resultados
+    document.write("El sueldo basico es: "+sb+"<br>");
+    document.write("La bonificacion es: "+bon+"<br>");
+    document.write("El descuento es: "+des+"<br>");
+    document.write("El sueldo final es: "+sf+"<br>");
+    document.write("<hr>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
